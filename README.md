@@ -1,4 +1,4 @@
-# Reducing Customer Churn and Revenue Leakage in Food Delivery Marketplace
+# Customer Churn & Revenue Leakage Analysis
 
 # Overview
 This project demonstrates how customer behaviour analytics can be used to reduce churn, improve retention, and grow revenue for food delivery platforms.
