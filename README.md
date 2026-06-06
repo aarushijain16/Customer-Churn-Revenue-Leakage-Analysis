@@ -11,7 +11,7 @@ for food delivery platforms.
 
 Using a public Foodpanda dataset, I applied RFM segmentation, churn analysis, 
 and operational diagnostics to model the commercial impact of customer behaviour 
-patterns — translating raw transactional data into actionable business decisions.
+patterns - translating raw transactional data into actionable business decisions.
 
 **Tools:** SQL (PostgreSQL) · Python (Pandas, Scikit-learn) · Power BI · 
 RFM Analysis · Cohort Analysis · Feature Engineering
@@ -25,7 +25,7 @@ combined with low repeat ordering mean that churn directly erodes unit economics
 
 Key questions this project addresses:
 
-- Which customer segments churn the most — and why?
+- Which customer segments churn the most - and why?
 - Where is revenue leaking operationally?
 - Which behavioural signals predict churn before it happens?
 - How can retention strategy be prioritised by commercial impact?
@@ -63,14 +63,14 @@ Key questions this project addresses:
 ## Key Findings
 
 **~50% churn concentrated in low-RFM segments**
-RFM analysis revealed churn was not evenly distributed — low-frequency, 
+RFM analysis revealed churn was not evenly distributed - low-frequency, 
 low-recency customers churned at nearly 50%, while high-RFM customers 
 showed significantly stronger retention. This enables targeted, 
 segment-specific retention strategy rather than blanket campaigns.
 
 **~66% of all orders affected by cancellations or delays**
 Delivery delays (32.87%) and cancellations (32.80%) together accounted 
-for approximately 66% of all orders — directly driving churn even among 
+for approximately 66% of all orders - directly driving churn even among 
 customers who had previously rated the service positively.
 
 **City-level churn variation is significant**
@@ -80,7 +80,7 @@ would outperform a one-size-fits-all approach.
 
 **Revenue is disproportionately concentrated**
 A small number of top-performing restaurants (e.g., KFC) contributed a 
-disproportionate share of total revenue — creating both a concentration 
+disproportionate share of total revenue - creating both a concentration 
 risk and a strategic partnership opportunity.
 
 ---
@@ -104,7 +104,7 @@ scaled using industry benchmarks to reflect real-world platform economics.*
 - Implement RFM-based segmentation for personalised retention offers
 - Protect high-value retained customers with loyalty incentives
 - Run reactivation campaigns targeting low-RFM, high-churn segments
-- Reduce cancellation and delay rates — operational reliability is 
+- Reduce cancellation and delay rates - operational reliability is 
   the single biggest churn driver
 - Monitor churn, retention, and delivery performance weekly via 
   live dashboards
@@ -127,7 +127,7 @@ scaled using industry benchmarks to reflect real-world platform economics.*
 ## Dataset Note
 
 This analysis uses a publicly available Foodpanda dataset. 
-All financial impacts are modelled estimates — not real business outcomes. 
+All financial impacts are modelled estimates - not real business outcomes. 
 The methodology reflects real analytical approaches used in food delivery 
 and marketplace analytics.
 
