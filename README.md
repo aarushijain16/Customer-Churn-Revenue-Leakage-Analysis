@@ -1,66 +1,47 @@
 # Customer Churn & Revenue Leakage Analysis
+### Food Delivery Marketplace | SQL ·  Python ·  Power BI
 
-# Overview
-This project demonstrates how customer behaviour analytics can be used to reduce churn, improve retention, and grow revenue for food delivery platforms.
+## Overview
+This project builds and end-to-end customer analytics framework to identify churn drivers, quantify revenue leakage, and surface retention opportunities for food delivery platforms. 
 
-Using SQL, Python, and Power BI, I built an end-to-end analytics framework that identifies:
+Using a public Foodpanda dataset, I applied RFM segmentation, churn analysis, and operational diagnostics to model the commercial impact of customer behaviour patterns - translating raw transactional data into actionable business decisions.
 
-- High-churn customer segments
+**Tools:** SQL (PostgreSQL) ·  Python (Pandas, Scikit-learn) ·  Power BI ·  RFM Analysis ·  Cohort Analysis ·  Feature Engineering
 
-- Loyalty and repeat-purchase patterns
+## Business Problem
 
-- Revenue-driving customers and restaurants
+Food delivery platforms face persistent challenges: high acquisition costs combined with low repeat ordering mean that churn directly erodes unit economics.
 
-- Operational issues impacting cancellations and engagement
+Key questions this project addresses:
 
-The approach reflects real challenges faced by food delivery platforms like FoodPanda, Zomato, or Swiggy.
+- Which customer segments churn the most and why?
 
-# Business Problem
+- Where is revenue leaking operationally?
 
-Food delivery platforms face persistent challenges:
+- Which behavioural signals predict churn before it happens?
 
-- High customer churn after initial sign-up
+- How can retention strategy be prioritised by commercial impact?
 
-- Low repeat ordering and weak loyalty
+## Analytical Approach
 
-- Revenue leakage due to cancellations and delivery delays
+**🔹 Customer Segmentation & RFM Scoring**
 
-- Limited visibility into why customers churn or stay
+- RFM scoring (Recency, Frequency, Monetary) to classify high-, mid-, and low-value customers
 
-Key questions addressed:
-
-- Which customer segments churn the most?
-
-- How can retention be measured when repeat data is limited?
-
-- Which behavioural and operational factors drive cancellations?
-
-- How can insights translate into revenue growth actions?
-
-# Solution Approach
-
-I designed a customer retention and revenue analytics framework using transactional data:
-
-**🔹 Customer Segmentation & Loyalty**
-
-- RFM scoring (Recency, Frequency, Monetary)
-
-- Customer clustering to identify high-, mid-, and low-value segments
-
-- City-level and demographic segmentation
+- City-level and demographic segmentation to identify geographic churn patterns
 
 **🔹 Churn & Retention Analysis**
 
-- Overall churn rate: **49.73%** (2,984 churned customers)
+- Overall churn rate: 49.73% (2,984 churned customers)
 
-- Overal retention rate: **50.27%** (3016 retained customers)
+- Overal retention rate: 50.27% (3016 retained customers)
 
-- Churn segmented by RFM group, city, demographics, and order features
+- Churn segmented by RFM group, city, demographics, and order behaviour
 
 
-**🔹 Performance & Revenue Analysis**
+**🔹 Operational and Revenue Diagnostics**
 
-- Total revenue generated: $14.3M
+- Total revenue analysed: $14.3M
 
 - Average Order Value (AOV): $2.6K
 
@@ -76,97 +57,66 @@ I designed a customer retention and revenue analytics framework using transactio
 
 **🔹 Executive Reporting**
 
-- Insights consolidate into a real-time Power BI dashboard connected to a PostgreSQL backend for continuous refresh and monitoring
+- Real-time Power BI dashboard connected to PostgreSQL backend
 
-# Key Business Insights and Impact
+- KPIs: churn rate, retention rate, AOV, cancellation rate, city-level performance
 
-## *(Estimated financial impact scaled to large food delivery platforms)*
+## Key Findings
 
-- Low-RFM customers showed 49.73% churn, while high-RFM customers had significantly higher retention
- → Targeted retention campaigns unlocked $10–20M in revenue uplift
+**~50% churn concentrated in low-RFM segments**
+RFM analysis revealed churn was not evenly distributed - low-frequency, low-recency customers churned at nearly 50%, while high-RFM customers showed significantly stronger retention. This enables targeted, segment-specific retention strategy rather than blanket campaigns. 
 
-- City-level churn varied significantly (Lahore highest, Karachi lowest)
- → Localized campaigns reduced churn, generating $5–15M impact
+**~66% of all orders affected by cancellations or delays**
+Delivery delays (32.87%) and cancellations (32.80%) together accounted for approximately 66% of all orders - directly driving churn even among customers who had previously rated the service positively.
 
-- Delivery delays and cancellations accounted for ~66% of all orders, driving churn even among rated orders
- → Fixing operational bottlenecks recovered $10–25M in lost revenue
+**City-level churn variation is significant**
+Churn rates varied materially by city (Lahore highest, Karachi lowest), indicating that geography-specific operational and marketing interventions would outperform a one-size-fits-all approach.
 
-- Top restaurants contributed a disproportionate share of revenue (e.g., KFC)
- → Strategic partnerships drove $5–15M incremental growth
+**Revenue is disproportionately concentrated**
+A small number of top-performing restaurants (e.g., KFC) contributed a disproportionare share of total revenue - creating both a concentration risk and a strategic partnership opportunity.
 
-- Clear retained-customer base of 3,016 users 
- → Focused loyalty and re-engagement strategies delivered $15–30M revenue upside
+## Modelled Business Impact
 
-# Strategic Recommendations
+*Financial impacts are modelled estimate based on the public dataset, scaled using industry benchmarks to reflect real-world platform economics.*
 
-- Implement RFM-based customer segmentation for personalized offers
+| Finding | Modelled Impact |
+|---|---|
+| Targeted retention for low-RFM churners | ~$10M+ revenue uplift potential |
+| Fixing cancellation & delivery bottlenecks | ~$10M+ in recoverable leakage |
+| City-specific churn reduction campaigns | ~$5M+ incremental impact |
+| High-value restaurant partnership strategy | ~$5M+ growth opportunity |
 
-- Protect and reward high-value retained customers with loyalty incentives
-
-- Target low-RFM, high-churn segments with reactivation campaigns
-
-- Improve delivery reliability to reduce the 32%+ cancellation and delay rates
-  
-- Partner closely with top-performing restaurants for exclusive promotions
-
-- Monitor churn, retention, and performance weekly via real-time dashboards
-
-# Tools and Technologies
-
-- Python (Pandas, Scikit-learn)
-
-- SQL (PostgreSQL)
-
-- Power BI (Real-time dashboard refresh)
-
-- Customer Analytics: RFM, churn, retention 
-
-- Data Engineering: city-level segmentation, feature engineering
-
-# Why this Matters for Your Business
-
-This project shows how data can turn:
-
-- Churn → retention
-
-- Retention → loyalty
-
-- Loyalty → predictable revenue growth
-
-The same framework can be applied to:
-
-- Food delivery platforms
-
-- Marketplaces
-
-- Subscription-based businesses
-
-- E-commerce apps
-
-# 📌 Note
-
-This analysis uses a publicly available Foodpanda dataset. Financial impacts are estimated using industry benchmarks to reflect real-world platform scale.
-
-# 💬 How I Can Help You
-
-If your business struggles with:
-
-- High churn
-
-- Low repeat orders
-
-- Revenue leakage
-
-- Poor customer visibility
-
-I can adapt this framework to your actual data and deliver:
-
-- SQL-based analysis
-
-- Python modeling
-
-- Real-time Power BI dashboards
-
-- Clear, action-oriented recommendations
+## Strategic Recommendations
 
 
+- Implement RFM-based segmentation for personalised retention offers
+
+- Protect high-value retained customers with loyalty incentives
+
+- Run reactivation campaigns targeting low-RFM, high-churn segments
+
+- Reduce cancellation and delay rates - operational reliability is the single biggest churn driver
+
+- Monitor churn, retention, and delivery performance weekly via live dashboards
+
+- Build city-specific playbooks rather than national campaigns
+
+## Tools and Technologies
+
+ Tool | Usage |
+|---|---|
+| SQL (PostgreSQL) | Data extraction, RFM scoring, operational metrics |
+| Python (Pandas, Scikit-learn) | EDA, segmentation, churn modelling |
+| Power BI | Real-time executive dashboard |
+| RFM Analysis | Customer value segmentation |
+| Feature Engineering | City-level and behavioural signal creation |
+
+
+## 📌 Dataset Note
+
+This analysis uses a publicly available Foodpanda dataset. 
+All financial impacts are modelled estimates - not real business outcomes.
+The methodology reflects real analytical approaches used in food delivery and marketplace analytics.
+
+*Part of the E-Commerce and Supply Chain Analytics Portfolio*
+*[View full portfolio](https://aarushijain16.github.io/sales-demand-customer-growth-portfolio/)*
